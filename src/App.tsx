@@ -629,7 +629,7 @@ function readyHousesData() {
     },
     { 
       id: "ready-3", 
-      title: i18n.t("โครงการฤทัย Luxury"), 
+      title: i18n.t("Ruethai Luxury"), 
       img: "/images/ready-houses/luxury/main.jpg", 
       desc: i18n.t("คฤหาสน์หรูทำเลทอง สังคมคุณภาพพร้อมสระส่วนตัว สถาปัตยกรรมระดับพรีเมียม ตอบโจทย์การใช้ชีวิตที่เหนือระดับ"), 
       price: i18n.t("เริ่มต้น 15.9 ล้านบาท") 
