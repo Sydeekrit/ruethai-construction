@@ -1,0 +1,215 @@
+160: title="ปิด (Close)"
+218: title="ย่อขนาดรูปภาพ (Fit image)"
+225: {zoomScale === 1.0 ? "พอดีหน้าจอ (100%)" : "ขยายภาพ (+40%)"}
+236: title="ขยายขนาดรูปภาพ (Zoom 1.4x)"
+387: {i18n.language === 'th' ? 'ไทย' : i18n.language === 'en' ? 'English' : '中文'}
+399: <button onClick={() => { i18n.changeLanguage('th'); setLanguageMenuOpen(false); }} className={`w-full text-left px-4 py-2.5 text-sm font-medium flex items-center gap-3 transition-colors ${i18n.language==='th' ? 'bg-primary/5 text-primary' : 'text-slate-700 hover:bg-slate-50'}`}><ThaiFlag/> ไทย</button>
+449: <button onClick={() => { i18n.changeLanguage('th'); setMobileMenuOpen(false); }} className={`flex items-center gap-3 px-4 py-3 text-sm transition-colors ${i18n.language === 'th' ? 'bg-primary/10 text-primary font-semibold' : 'hover:bg-slate-200 text-slate-700'}`}><ThaiFlag/> ไทย</button>
+511: { id: "modern", title: "แบบบ้านโมเดิร์น", img: "/images/house-designs/modern/cover.jpg" },
+512: { id: "contemporary", title: "แบบบ้านคอนเทมโพลารี่", img: "/images/house-designs/contemporary/cover.jpg" },
+514: { id: "thai-applied", title: "แบบบ้านไทยประยุกต์", img: "/images/house-designs/thai-applied/cover.jpg" },
+515: { id: "modern-classic", title: "แบบบ้านโมเดิร์นคลาสสิก", img: "/images/house-designs/modern-classic/cover.jpg" },
+532: title: "ศุทราโมเดิร์น ๑",
+534: landSize: "80 ตร.วา",
+539: price: "เริ่มต้น 2.5 ล้านบาท",
+550: title: "ศุทราคอนเทมโพลารี่ ๑",
+552: landSize: "150 ตร.วา",
+557: price: "เริ่มต้น 3.8 ล้านบาท",
+568: title: "ศุทรามูจิ ๑",
+570: landSize: "220 ตร.วา",
+575: price: "เริ่มต้น 5.2 ล้านบาท",
+578: { id: "sutra-lanna1", category: "thai-applied", img: "/images/house-designs/thai-applied/Sutra-lanna1/Sutralanna001a-trumbnall.jpg", gallery: ["/images/house-designs/thai-applied/Sutra-lanna1/Sutralanna001a.jpg?v=9"], title: "ศุทราล้านนา ๑", area: "220 ตร.ม.", landSize: "150 ตร.วา", bed: 4, bath: 3, car: 2, floor: 2, price: "เริ่มต้น 4.5 ล้านบาท", priceNumeric: 4.5 },
+579: { id: "sutra-modern-classic1", category: "modern-classic", img: "/images/house-designs/modern-classic/Sutra-modern-classic1/main.jpg", gallery: ["/images/house-designs/modern-classic/Sutra-modern-classic1/main.jpg"], title: "ศุทราโมเดิร์นคลาสสิก ๑", area: "320 ตร.ม.", landSize: "220 ตร.วา", bed: 5, bath: 5, car: 3, floor: 3, price: "เริ่มต้น 7.5 ล้านบาท", priceNumeric: 7.5 },
+580: { id: "sutra-nordic1", category: "western", img: "/images/house-designs/western/Sutra-nordic1/Sutranordic001a.jpg", gallery: ["/images/house-designs/western/Sutra-nordic1/Sutranordic001a.jpg"], title: "ศุทรานอร์ดิก ๑", area: "400 ตร.ม.", landSize: "220 ตร.วา", bed: 6, bath: 6, car: 3, floor: 3, price: "เริ่มต้น 12 ล้านบาท", priceNumeric: 12 },
+589: title: "ศุทราโมเดิร์น ๒",
+591: landSize: "80 ตร.วา",
+596: price: "เริ่มต้น 2.8 ล้านบาท",
+599: { id: "sutra-contemporary2", category: "contemporary", img: "/images/house-designs/contemporary/Sutra-contemporary2/Sutracontempolary002a-trumbnall.jpg?v=1", gallery: ["/images/house-designs/contemporary/Sutra-contemporary2/Sutracontempolary002a.jpg?v=10"], title: "ศุทราคอนเทมโพลารี่ ๒", area: "200 ตร.ม.", landSize: "150 ตร.วา", bed: 4, bath: 4, car: 2, floor: 2, price: "เริ่มต้น 4.2 ล้านบาท", priceNumeric: 4.2 },
+601: { id: "sutra-modern3", category: "modern", img: "/images/house-designs/modern/Sutra-modern3/main.jpg", gallery: ["/images/house-designs/modern/Sutra-modern3/main.jpg"], title: "ศุทราโมเดิร์น ๓", area: "150 ตร.ม.", landSize: "150 ตร.วา", bed: 3, bath: 3, car: 2, floor: 1, price: "เริ่มต้น 3.2 ล้านบาท", priceNumeric: 3.2 },
+602: { id: "sutra-lanna2", category: "thai-applied", img: "/images/house-designs/thai-applied/Sutra-lanna2/Sutralanna002a-trumbnall.jpg", gallery: ["/images/house-designs/thai-applied/Sutra-lanna2/Sutralanna002a.jpg?v=9"], title: "ศุทราล้านนา ๒", area: "240 ตร.ม.", landSize: "220 ตร.วา", bed: 4, bath: 4, car: 2, floor: 2, price: "เริ่มต้น 4.8 ล้านบาท", priceNumeric: 4.8 },
+603: { id: "sutra-modern-classic2", category: "modern-classic", img: "/images/house-designs/modern-classic/Sutra-modern-classic2/main.jpg", gallery: ["/images/house-designs/modern-classic/Sutra-modern-classic2/main.jpg"], title: "ศุทราโมเดิร์นคลาสสิก ๒", area: "350 ตร.ม.", landSize: "220 ตร.วา", bed: 5, bath: 6, car: 3, floor: 3, price: "เริ่มต้น 8.0 ล้านบาท", priceNumeric: 8.0 },
+604: { id: "sutra-nordic2", category: "western", img: "/images/house-designs/western/Sutra-nordic2/main.jpg", gallery: ["/images/house-designs/western/Sutra-nordic2/main.jpg"], title: "ศุทรานอร์ดิก ๒", area: "420 ตร.ม.", landSize: "220 ตร.วา", bed: 6, bath: 7, car: 4, floor: 3, price: "เริ่มต้น 12.5 ล้านบาท", priceNumeric: 12.5 },
+605: { id: "sutra-contemporary3", category: "contemporary", img: "/images/house-designs/contemporary/Sutra-contemporary3/Sutracontempolary003a-trumbnall.jpg?v=1", gallery: ["/images/house-designs/contemporary/Sutra-contemporary3/Sutracontempolary003a.jpg?v=1"], title: "ศุทราคอนเทมโพลารี่ ๓", area: "220 ตร.ม.", landSize: "150 ตร.วา", bed: 4, bath: 4, car: 2, floor: 2, price: "เริ่มต้น 4.6 ล้านบาท", priceNumeric: 4.6 },
+607: { id: "sutra-lanna3", category: "thai-applied", img: "/images/house-designs/thai-applied/Sutra-lanna3/main.jpg", gallery: ["/images/house-designs/thai-applied/Sutra-lanna3/main.jpg"], title: "ศุทราล้านนา ๓", area: "260 ตร.ม.", landSize: "220 ตร.วา", bed: 4, bath: 5, car: 3, floor: 2, price: "เริ่มต้น 5.2 ล้านบาท", priceNumeric: 5.2 },
+608: { id: "sutra-modern-classic3", category: "modern-classic", img: "/images/house-designs/modern-classic/Sutra-modern-classic3/main.jpg", gallery: ["/images/house-designs/modern-classic/Sutra-modern-classic3/main.jpg"], title: "ศุทราโมเดิร์นคลาสสิก ๓", area: "380 ตร.ม.", landSize: "220 ตร.วา", bed: 5, bath: 6, car: 4, floor: 3, price: "เริ่มต้น 9.5 ล้านบาท", priceNumeric: 9.5 },
+609: { id: "sutra-nordic3", category: "western", img: "/images/house-designs/western/Sutra-nordic3/main.jpg", gallery: ["/images/house-designs/western/Sutra-nordic3/main.jpg"], title: "ศุทรานอร์ดิก ๓", area: "450 ตร.ม.", landSize: "220 ตร.วา", bed: 6, bath: 7, car: 4, floor: 3, price: "เริ่มต้น 14.5 ล้านบาท", priceNumeric: 14.5 }
+624: desc: "โครงการทาวน์โฮม 2 ชั้น ทำเลที่พักอาศัยอย่างแท้จริง เดินทางสะดวก เข้าโครงการจากเส้นหลัก (สันกำแพง-เชียงใหม่ สายเก่า) เพียง 500 เมตร หน้ากว้าง 5 เมตรเต็มๆ จอดรถสะดวก",
+625: price: "เริ่มต้น 2.49 ล้านบาท",
+627: { icon: <Maximize className="w-5 h-5" />, label: "พื้นที่ใช้สอย", value: "120 ตร.ม." },
+628: { icon: <Sofa className="w-5 h-5" />, label: "ห้องรับแขก", value: "1 ห้อง" },
+629: { icon: <Bed className="w-5 h-5" />, label: "ห้องนอน", value: "2 ห้อง (มีห้องน้ำในตัว 1 ห้อง)" },
+631: { icon: <Utensils className="w-5 h-5" />, label: "ห้องครัว", value: "1 ห้อง" },
+632: { icon: <Coffee className="w-5 h-5" />, label: "ห้องอาหาร", value: "1 ห้อง" },
+639: desc: "บ้านเดี่ยวและทาวน์โฮมโมเดิร์น ทำเลดีเดินทางสะดวก ใกล้สิ่งอำนวยความสะดวกครบครัน ตอบโจทย์รอบด้าน",
+644: title: "โครงการศุทรา Luxury",
+646: desc: "คฤหาสน์หรูทำเลทอง สังคมคุณภาพพร้อมสระส่วนตัว สถาปัตยกรรมระดับพรีเมียม ตอบโจทย์การใช้ชีวิตที่เหนือระดับ",
+647: price: "เริ่มต้น 15.9 ล้านบาท"
+662: { id: "land-1", title: "ที่ดินแบ่งขาย โซนสันกำแพง", img: "/images/lands/land-1.jpg", gallery: ["/images/lands/land-1.jpg", ...commonGallery.slice(1)], desc: "ที่ดินสวย วิวภูเขา เหมาะสำหรับสร้างบ้าน", price: "เริ่มต้น 8,000 บาท/ตร.ว.", area: "80 - 120 ตร.ว.", location: "อ.สันกำแพง จ.เชียงใหม่", type: "โฉนดครุฑแดง" },
+663: { id: "land-2", title: "ที่ดินเปล่า โซนหางดง", img: "/images/lands/land-2.jpg", gallery: ["/images/lands/land-2.jpg", ...commonGallery.slice(1)], desc: "ใกล้สิ่งอำนวยความสะดวก น้ำไฟเข้าถึง", price: "เริ่มต้น 12,000 บาท/ตร.ว.", area: "100 ตร.ว.", location: "อ.หางดง จ.เชียงใหม่", type: "โฉนดครุฑแดง" },
+664: { id: "land-3", title: "ที่ดินแปลงใหญ่ โซนสันทราย", img: "/images/lands/land-3.jpg", gallery: ["/images/lands/land-3.jpg", ...commonGallery.slice(1)], desc: "เหมาะสำหรับทำโครงการจัดสรร หรือการเกษตร", price: "เริ่มต้น 5,000 บาท/ตร.ว.", area: "5 ไร่", location: "อ.สันทราย จ.เชียงใหม่", type: "โฉนดครุฑแดง" }
+670: { id: "design", title: "ผลงานออกแบบอาคาร", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80", count: 2 },
+671: { id: "new-build", title: "ผลงานก่อสร้างอาคารใหม่", img: "https://images.unsplash.com/photo-1541888081600-0e10cc6b2c28?auto=format&fit=crop&w=800&q=80", count: 2 },
+673: { id: "interior", title: "ผลงานตกแต่งภายใน", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80", count: 1 }
+681: title: "โครงการออกแบบบ้านเดี่ยว 2 ชั้น",
+683: category: "ผลงานออกแบบอาคาร",
+685: location: "อ.เมือง จ.เชียงใหม่",
+687: desc: "ออกแบบสถาปัตยกรรมบ้านเดี่ยวสไตล์โมเดิร์นทรอปิคอล เน้นการประหยัดพลังงาน",
+696: title: "ออกแบบอาคารพาณิชย์ 3 ชั้น",
+698: category: "ผลงานออกแบบอาคาร",
+700: location: "ย่านนิมมานเหมินทร์",
+702: desc: "ผลงานการออกแบบสำนักงานและพื้นที่ร้านค้า เน้นความเป็นเอกลักษณ์และโดดเด่น",
+710: title: "บ้านเดี่ยวสไตล์นอร์ดิก",
+712: category: "ผลงานก่อสร้างอาคารใหม่",
+714: location: "อ.หางดง จ.เชียงใหม่",
+716: desc: "ก่อสร้างบ้านเดี่ยวสไตล์นอร์ดิกตั้งแต่เริ่มต้นจนส่งมอบงาน",
+724: title: "ก่อสร้างอาคารสำนักงานและโกดัง",
+726: category: "ผลงานก่อสร้างอาคารใหม่",
+728: location: "อ.สารภี จ.เชียงใหม่",
+730: desc: "ผลงานก่อสร้างอาคารโรงงานพร้อมสำนักงาน โครงสร้างเหล็กและคอนกรีตคุณภาพสูง",
+738: title: "รีโนเวทบ้านเก่า 30 ปี เป็นคาเฟ่",
+740: category: "ผลงานรีโนเวทอาคาร",
+742: location: "ย่านวัดเกต เชียงใหม่",
+744: desc: "พลิกโฉมบ้านไม้กึ่งปูนเก่าแก่ให้กลายเป็นคาเฟ่และร้านอาหารสุดชิค",
+752: title: "ตกแต่งภายในคอนโดมิเนียมหรู",
+754: category: "ผลงานตกแต่งภายใน",
+756: location: "แยกศาลเด็ก เชียงใหม่",
+758: desc: "บิ้วอินและตกแต่งภายในคอนโดด้วยกระจกและลายหินอ่อน",
+819: title="แบบบ้านยอดนิยม แบบสร้างบ้านโมเดิร์นและมินิมอล"
+820: description="รวมแบบบ้านสวยๆ พร้อมฟังก์ชันใช้สอยลงตัว ทั้งทาวน์โฮมสองชั้น ทาวน์เฮ้าส์ และแบบบ้านมูจิ มินิมอล โมเดิร์น ราคาประหยัดและคุ้มค่าที่สุดในเชียงใหม่"
+821: keywords="แบบบ้านเชียงใหม่, แบบบ้านราคาถูก, ขายทาวน์เฮ้าส์เชียงใหม่, แบบบ้านมูจิ, รับสร้างบ้านเชียงใหม่"
+1027: <div className="flex items-center gap-1.5" title="ขนาดที่ดิน"><Mountain className="w-4 h-4 text-slate-400" /> {(plan as any).landSize || "150 ตร.วา"}</div>
+1080: title={`แบบบ้านในหมวดหมู่ ${category ? t(category.title) : ''}`}
+1081: description={`ชมและเลือกแบบบ้านในสไตล์ ${category ? t(category.title) : ''} มินิมอล โมเดิร์น หรือลักชัวรี ออกแบบลงตัวทุกตารางนิ้ว พร้อมสร้างตามความฝันของคุณ`}
+1082: keywords={`${category ? t(category.title) : 'แบบบ้าน'}, รับสร้างบ้านเชียงใหม่, ขายทาวน์เฮ้าส์เชียงใหม่, ห้องแถวราคาถูก`}
+1127: <div className="flex items-center gap-1.5" title="ขนาดที่ดิน"><Mountain className="w-4 h-4 text-slate-400" /> {(plan as any).landSize || "150 ตร.วา"}</div>
+1179: else if (!/^[0-9-]{9,12}$/.test(value.replace(/\s+/g, ''))) error = 'รูปแบบเบอร์โทรศัพท์ไม่ถูกต้อง (เช่น 090-123-4567)';
+1217: title="รับสร้างบ้านเชียงใหม่ ขายทาวน์โฮม ทาวน์เฮ้าส์คุณภาพดีราคาถูก"
+1218: description="บริษัท ศุทราคอนสรัคชั่น จำกัด รับสร้างบ้านในเชียงใหม่ เชียงราย ลำพูน ลำปาง ออกแบบบ้านสวย ควบคุมงานโดยวิศวกรมืออาชีพ และขายทาวน์เฮ้าส์เชียงใหม่ ทาวน์โฮมสองชั้น ห้องแถวราคาถูก ทำเลเด่น"
+1219: keywords="ขายทาวน์เฮ้าส์เชียงใหม่, ห้องแถวราคาถูก, รับสร้างบ้านเชียงใหม่, สร้างบ้านเชียงใหม่, ทาวน์โฮมเชียงใหม่, บ้านราคาถูกเชียงใหม่, ศุทราคอนสรัคชั่น"
+1430: คลิกเพื่อเล่นวิดีโอแนะนำ
+1556: <div className="flex items-center gap-1.5" title="ขนาดที่ดิน"><Mountain className="w-4 h-4 text-slate-400" /> {(plan as any).landSize || "150 ตร.วา"}</div>
+1675: title: "ทีมงานมืออาชีพ",
+1676: desc: "ควบคุมงานโดยวิศวกรและสถาปนิกที่มีประสบการณ์สูง",
+1681: title: "วัสดุคุณภาพเยี่ยม",
+1682: desc: "เราคัดสรรวัสดุก่อสร้างที่ได้มาตรฐานและมีคุณภาพที่สุดสำหรับบ้านคุณ",
+1687: title: "สร้างด้วยใจ",
+1688: desc: "ดูแลทุกขั้นตอนเสมือนสร้างบ้านของเราเอง จริงใจและโปร่งใส",
+1979: <input type="hidden" name="_subject" value="การติดต่อใหม่จากหน้าเว็บไซต์ ศุทราคอนสรัคชั่น" />
+2109: { icon: <Maximize className="w-5 h-5" />, label: "พื้นที่ใช้สอย", value: plan.area },
+2110: { icon: <Mountain className="w-5 h-5" />, label: "ขนาดที่ดิน", value: (plan as any).landSize || "150 ตร.วา" },
+2112: { icon: <Bath className="w-5 h-5" />, label: "ห้องน้ำ", value: `${plan.bath} ${"ห้อง"}` },
+2113: { icon: <Car className="w-5 h-5" />, label: "ที่จอดรถ", value: `${plan.car} ${"คัน"}` },
+2114: { icon: <Building2 className="w-5 h-5" />, label: "จำนวนชั้น", value: `${(plan as any).floor} ${"ชั้น"}` },
+2120: title={`แบบบ้าน ${plan ? t(plan.title) : ''} - รับสร้างบ้านเชียงใหม่`}
+2121: description={`แบบบ้าน ${plan ? t(plan.title) : ''} พื้นที่ใช้สอย ${plan?.area || ''} ห้องนอน ${plan?.bed || ''} ห้องน้ำ ${plan?.bath || ''} จอดรถ ${plan?.car || ''} คัน ออกแบบก่อสร้างได้คุณภาพสูงสุด`}
+2122: keywords={`แบบบ้าน ${plan ? t(plan.title) : ''}, แบบบ้านเชียงใหม่, รับสร้างบ้านเชียงใหม่, ขายทาวน์เฮ้าส์เชียงใหม่`}
+2163: <span>กดขยายภาพ</span>
+2278: title="โครงการบ้านพร้อมอยู่ ทาวน์โฮม ทาวน์เฮ้าส์เชียงใหม่ ห้องแถวราคาถูก"
+2279: description="รวมโครงการบ้านพร้อมอยู่คุณภาพดีในเชียงใหม่ เช่น โครงการ C-Home, P-Place Project บ้านจัดสรร ทาวน์โฮม 2 ชั้น ทาวน์เฮ้าส์ราคาพิเศษ ห้องแถวราคาถูก ทำเลเด่น"
+2280: keywords="โครงการบ้านเชียงใหม่, ขายทาวน์เฮ้าส์เชียงใหม่, ห้องแถวราคาถูก, โครงการ P-Place, โครงการ C-Home, บ้านพร้อมอยู่เชียงใหม่"
+2385: title: "บรรยากาศดีไซน์ภายนอก",
+2386: subtitle: "ทาวน์โฮม 2 ชั้น ทรงอิสระ ดีไซน์โมเดิร์นทรอปิคอล"
+2391: title: "พื้นที่นั่งเล่นและโถงรับแขก",
+2392: subtitle: "ความโปร่งสบายด้วยการเปิดช่องกระจกรับแสงธรรมชาติจากภายนอกอย่างพอเหมาะ"
+2397: title: "พื้นที่รับประทานอาหาร",
+2398: subtitle: "โซนจัดแต่งรับประทานอาหารที่เชื่อมกับโถงรวม มอบช่วงเวลาสุขสุขประทับใจ"
+2403: title: "ห้องครัวแยกเป็นสัดส่วน",
+2404: subtitle: "ตอบสนองการทำครัวสไตล์ไทยและตะวันตกอย่างโมเดิร์นและเป็นสัดส่วนชัดเจน"
+2409: title: "ห้องนอนใหญ่ระดับมาสเตอร์",
+2410: subtitle: "พื้นที่พักผ่อนขนาดครอบคลุมทั้งชั้นเพื่อความผ่อนคลายและเติมพลังชีวิตอย่างแท้จริง"
+2415: title: "ห้องน้ำชั้นบนดีไซน์กว้างขวาง",
+2416: subtitle: "โปร่งสบายด้วยระบายอากาศที่ดี สุขภัณฑ์ประหยัดน้ำและแยกพาร์ติชันเปียกแห้งเพื่อความปลอดภัย"
+2445: "ทัศนียภาพหน้าโครงการและตัวบ้านเด่นสง่า",
+2446: "ห้องนั่งเล่นที่ออกแบบร่วมสมัยพร้อมผนังกระจกกว้างขวาง",
+2448: "ห้องครัวสไตล์สแกนดิเนเวียน ดีไซน์มินิมอลโมเดิร์นอย่างสวยหรู",
+2449: "ห้องนอนใหญ่พร้อมพื้นที่พักผ่อนที่กว้างขวางระดับสูงสุด",
+2451: "ห้องนอนสำรองสำหรับการทำงานหรือสมาชิกในครอบครัว",
+2453: "สวนขนาดย่อมสีเขียวเย็นตาด้านข้างเพื่อเติมพลังธรรมชาติ"
+2458: title: "ซีพี เฟรชมาร์ท",
+2459: desc: "ตั้งอยู่บริเวณปากทางเข้าโครงการ จับจ่ายของสด ของแช่แข็ง และเครื่องบริโภคจำเป็นในครัวเรือนได้อย่างสะดวกรวดเร็ว",
+2464: title: "ถนนสายหัตถกรรมบ่อสร้าง",
+2465: desc: "ห่างจากโครงการเพียง 2 กม. แหล่งท่องเที่ยวและศูนย์กลางร่มกระดาษบ่อสร้างที่มีชื่อเสียงระดับโลก",
+2470: title: "แม็คโคร เชียงใหม่",
+2471: desc: "ศูนย์ค้าส่งสินค้าอุปโภคบริโภคขนาดใหญ่ แหล่งรวมวัตถุดิบอาหารสดและของแห้งคุณภาพดีสำหรับธุรกิจและครัวเรือน",
+2476: title: "เดินทางเข้าเมืองเชียงใหม่",
+2477: desc: "เชื่อมต่อเข้าสู่ตัวเมืองอย่างสะดวกสบาย วัดระยะทางถึงสถานีรถไฟเชียงใหม่ เพียง 6.5 กม.",
+2482: title: "ห้างสรรพสินค้าเซ็นทรัลเชียงใหม่เฟสติวัล",
+2483: desc: "แหล่งรวมความบันเทิงและไลฟ์สไตล์ระดับแถวหน้า",
+2488: title: "สนามบินนานาชาติเชียงใหม่",
+2489: desc: "เชื่อมต่อได้ทุกการบินระดับนานาชาติอย่างปลอดภัยหายห่วง",
+2512: title={`โครงการ ${project ? t(project.title) : ''} พร้อมอยู่เชียงใหม่`}
+2513: description={`${project ? t(project.desc) : ''} ราคาเริ่มต้น ${project?.price || ''} ทาวน์เฮ้าส์ ทาวน์โฮม และบ้านเดี่ยวทำเลทองของเชียงใหม่`}
+2514: keywords={`โครงการ ${project ? t(project.title) : ''}, ทาวน์โฮม ${project ? t(project.title) : ''}, ขายทาวน์เฮ้าส์เชียงใหม่, ห้องแถวราคาถูก, บ้านเชียงใหม่`}
+2530: Showcase Page • โครงการนวัตกรรมร่วมสมัย
+2647: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">พื้นที่ใช้สอย</span>
+2659: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">ห้องนั่งเล่นครอบครัว</span>
+2671: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">ห้องนอนกว้างขวาง</span>
+2683: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">ห้องน้ำดีไซน์หรู</span>
+2695: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">หน้ากว้างจอดรถสะใจ</span>
+2707: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">ทาวน์โฮม 2 ชั้น</span>
+2719: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">ห้องครัวสัดส่วนกว้าง</span>
+2739: <span className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 block font-medium">ระเบียงพักผ่อนอุ่นใจ</span>
+2748: <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-0.5">ราคาเริ่มต้นพิเศษ</p>
+3195: title={`โครงการ ${project ? t(project.title) : ''} พร้อมอยู่เชียงใหม่`}
+3196: description={`${project ? t(project.desc) : ''} ราคาเริ่มต้น ${project?.price || ''} ทาวน์เฮ้าส์ ทาวน์โฮม และบ้านเดี่ยวทำเลทองของเชียงใหม่`}
+3197: keywords={`โครงการ ${project ? t(project.title) : ''}, ทาวน์โฮม ${project ? t(project.title) : ''}, ขายทาวน์เฮ้าส์เชียงใหม่, ห้องแถวราคาถูก, บ้านเชียงใหม่`}
+3238: <span>กดขยายภาพ</span>
+3307: title="ขายที่ดินเปล่าทำเลทอง เชียงใหม่ - เหมาะสำหรับสร้างบ้านหรือลงทุน"
+3308: description="เลือกซื้อที่ดินเชียงใหม่ ที่ดินสันกำแพง ที่ดินต่างจังหวัด ราคาถูก ทำเลสวย น้ำไฟเข้าถึง พร้อมโอนกรรมสิทธิ์สร้างบ้านหรืออาคารพาณิชย์"
+3309: keywords="ขายที่ดินเชียงใหม่, ที่ดินราคาถูกเชียงใหม่, ที่ดินสำหรับสร้างบ้าน, ที่ดินสันกำแพง, ซื้อที่ดินเชียงใหม่"
+3320: ขายที่ดิน
+3371: { icon: <Maximize className="w-5 h-5" />, label: "เนื้อที่", value: (land as any).area || "สอบถามเพิ่มเติม" },
+3372: { icon: <MapPin className="w-5 h-5" />, label: "ทำเล", value: (land as any).location || "เชียงใหม่" },
+3373: { icon: <FileText className="w-5 h-5" />, label: "เอกสารสิทธิ์", value: (land as any).type || "โฉนดครุฑแดง" },
+3379: title={`ขายที่ดิน ${land ? t(land.title) : ''} - ที่ดินเปล่าเชียงใหม่ทำเลทอง`}
+3380: description={`รายละเอียดที่ดิน ${land ? t(land.title) : ''} ${land ? t(land.desc) : ''} ขนาดเนื้อที่ ${land?.area || ''} ราคาเชียงใหม่สุดคุ้ม เหมาะสร้างบ้านหรืออยู่อาศัย`}
+3381: keywords={`ที่ดิน ${land ? t(land.title) : ''}, ขายที่ดินเชียงใหม่, ที่ดินราคาถูกเชียงใหม่, ที่ดินสันกำแพง`}
+3422: <span>กดขยายภาพ</span>
+3489: title="ผลงานสร้างบ้านคุณภาพ โครงการและบ้านระดับพรีเมียม"
+3490: description="ชมแกลเลอรีและประวัติโครงการก่อสร้างบ้านพักอาศัย ทาวน์เฮ้าส์ โครงการจัดสรร และอาคารพาณิชย์ โดยทีมงานวิศวกรและสถาปนิก ศุทราคอนสรัคชั่น"
+3491: keywords="ผลงานสร้างบ้าน, รีวิวสร้างบ้านเชียงใหม่, ผลงานศุทราคอนสรัคชั่น"
+3556: title={`ผลงานประเภท ${categoryInfo ? t(categoryInfo.title) : ''}`}
+3557: description={`เข้าชมผลงานการสร้างบ้าน ออกแบบ และตกแต่งภายในในหมวดหมู่ ${categoryInfo ? t(categoryInfo.title) : ''} ล่าสุดจากศุทราคอนสรัคชั่น`}
+3558: keywords={`ผลงาน ${categoryInfo ? t(categoryInfo.title) : ''}, รีวิวสร้างบ้าน, ศุทราคอนสรัคชั่น`}
+3675: title={`ผลงานโครงการ ${project ? t(project.title) : ''} - ศุทราคอนสรัคชั่น`}
+3676: description={`${project ? t(project.desc) : ''} ผลงานการก่อสร้างคุณภาพสูง ใส่ใจทุกรายละเอียดของงานวิศวกรรมโดยทีมงานมืออาชีพ`}
+3677: keywords={`ผลงาน ${project ? t(project.title) : ''}, สร้างบ้าน ${project ? t(project.title) : ''}, ศุทราคอนสรัคชั่น`}
+3729: <span>กดขยายภาพ</span>
+3793: title: "รู้จักกับปัญหาสนิมในงานก่อสร้าง",
+3794: desc: "สนิมเป็นปัญหาที่ส่งผลกระทบต่อความแข็งแรงของโครงสร้างเหล็ก เรียนรู้สาเหตุและวิธีการป้องกัน...",
+3800: title: "ประเภทของเหล็กในงานก่อสร้าง",
+3801: desc: "เหล็กเส้น เหล็กรูปพรรณ และการเลือกใช้เหล็กให้เหมาะสมกับโครงสร้างแต่ละประเภทเพื่อความปลอดภัยสูงสุด...",
+3807: title: "ขั้นตอนการยื่นแบบและขออนุญาตก่อสร้าง",
+3808: desc: "ก่อนเริ่มสร้างบ้าน ต้องเตรียมเอกสารอะไรบ้าง? และมีขั้นตอนการติดต่อหน่วยงานราชการอย่างไร...",
+3817: title="บทความน่ารู้เรื่องบ้าน บล็อกสร้างบ้านและอสังหาริมทรัพย์"
+3818: description="คุยเรื่องบ้านกับบทความน่ารู้ การดูแลรักษาบ้าน การเลือกซื้อที่ดิน ตกแต่งบ้าน วิธีรับมือกับปัญหาเรื่องบ้าน และเทคนิคการสร้างบ้านในงวดต่างๆ"
+3819: keywords="บทความสร้างบ้าน, คลินิกบ้าน, จัดแต่งบ้านเชียงใหม่, เทคนิคสร้างบ้าน"
+3859: title="บริการรับสร้างบ้านครบวงจร คุณภาพดีด้วยทีมวิศวกร"
+3860: description="บริษัท ศุทราคอนสรัคชั่น จำกัด ให้บริการออกแบบ เขียนแบบ ก่อสร้าง ตกแต่งภายในครบวงจร พร้อมยื่นขอใบอนุญาตก่อสร้างและควบคุมโดยวิศวกรผู้เชี่ยวชาญ"
+3861: keywords="บริการรับสร้างบ้าน, บริการเขียนแบบบ้าน, ออกแบบบ้านเชียงใหม่, รับเหมาก่อสร้างเชียงใหม่"
+3877: title: "รับสร้างบ้านมือหนึ่ง",
+3878: desc: "บริการสร้างบ้านบนที่ดินของคุณ พร้อมแบบบ้านให้เลือกหลากหลาย หรือออกแบบใหม่ตามความต้องการ",
+3883: title: "ออกแบบสถาปัตยกรรม",
+3884: desc: "ให้คำปรึกษาและออกแบบบ้านโดยสถาปนิกผู้เชี่ยวชาญ คัดสรรฟังก์ชันให้ตอบโจทย์ไลฟ์สไตล์คุณ",
+3889: title: "ต่อเติมและรีโนเวท",
+3890: desc: "ปรับปรุง ซ่อมแซม หรือต่อเติมบ้านเดิมของคุณให้กลับมาสวยงามและใช้งานได้อย่างเต็มประสิทธิภาพ",
+3895: title: "ตกแต่งภายใน",
+3896: desc: "บริการออกแบบและตกแต่งภายในครบวงจร สร้างสรรค์พื้นที่ให้สวยงาม สะท้อนตัวตนของคุณ",
+3901: title: "ฝากขายที่ดิน",
+3902: desc: "บริการรับฝากขายที่ดินทุกประเภท ด้วยเครือข่ายที่กว้างขวางและทีมงานมืออาชีพ ช่วยให้คุณขายได้เร็วขึ้น",
+3907: title: "ฝากขายอสังหา",
+3908: desc: "บริการรับฝากขายบ้าน คอนโด และอสังหาริมทรัพย์ทุกชนิด ฟรีค่าการตลาดและให้คำปรึกษาตลอดการขาย",
+3984: title="เกี่ยวกับเรา ศุทราคอนสรัคชั่น - ผู้เชี่ยวชาญด้านงานสร้างบ้านเชียงใหม่"
+3985: description="ทำความรู้จักกับ บริษัท ศุทราคอนสรัคชั่น จำกัด มุ่งมั่นพัฒนาและดูแลงานก่อสร้างทุกระดับ ด้วยทีมงานสถาปนิกและวิศวกรคุณภาพ มาตรฐานระดับสากล"
+3986: keywords="บริษัทสร้างบ้านเชียงใหม่, ศุทราคอนสรัคชั่น, ทีมวิศวกรเชียงใหม่"
+4012: role: "ผู้บริหาร (CEO / Managing Director)",
+4013: name: "คุณศุทรา ปณชัยเจริญ",
+4018: role: "สถาปนิก (Architect) ภ.สถ 11066",
+4019: name: "คุณกฤษฎิ์ วุฑฒยากร",
+4023: role: "วิศวกรโยธา (Civil Engineer)",
+4024: name: "คุณธนพล สุวรรณวัตต์",
+4028: role: "วิศวกรโยธาภาคีพิเศษ (Special Adjunct Civil Engineer)",
+4033: role: "หัวหน้าฝ่ายขาย (Head of Sales)",
+4034: name: "คุณกุลลดา พงศ์พฤกษทล",
+4038: role: "หัวหน้าฝ่ายการตลาด (Head of Marketing)",
+4039: name: "คุณปานทิพย์ สังข์ทอง",

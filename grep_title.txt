@@ -1,0 +1,30 @@
+162:        title={t("ปิด (Close)")}
+220:            title={t("ย่อขนาดรูปภาพ (Fit image)")}
+238:            title={t("ขยายขนาดรูปภาพ (Zoom 1.4x)")}
+833:        title={t("แบบบ้านยอดนิยม แบบสร้างบ้านโมเดิร์นและมินิมอล")} 
+1041:                         <div className="flex items-center gap-1.5" title={t("พื้นที่ใช้สอย")}><Maximize className="w-4 h-4 text-slate-400" /> {plan.area}</div>
+1093:        title={`แบบบ้านในหมวดหมู่ ${category ? t(category.title) : ''}`} 
+1140:                     <div className="flex items-center gap-1.5" title={t("พื้นที่ใช้สอย")}><Maximize className="w-4 h-4 text-slate-400" /> {plan.area}</div>
+1293:        title={t("รับสร้างบ้านเชียงใหม่ ขายทาวน์โฮม ทาวน์เฮ้าส์คุณภาพดีราคาถูก")} 
+2419:        title={`แบบบ้าน ${plan ? t(plan.title) : ''} - รับสร้างบ้านเชียงใหม่`} 
+2443:            <a href="tel:0910123456" title={t('โทรติดต่อ')} className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:text-primary hover:border-primary transition-all hover:scale-105 active:scale-95 shadow-sm">
+2446:            <a href="mailto:milinandnile@gmail.com" title={t('เขียนอีเมล')} className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:text-primary hover:border-primary transition-all hover:scale-105 active:scale-95 shadow-sm">
+2449:            <a href="https://line.me/R/ti/p/%40plus-builders" target="_blank" rel="noopener noreferrer" title="LINE Official" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:text-primary hover:border-primary transition-all hover:scale-105 active:scale-95 shadow-sm font-semibold text-xs tracking-tighter">
+2452:            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook Page" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:text-primary hover:border-primary transition-all hover:scale-105 active:scale-95 shadow-sm font-semibold text-xs">
+2869:        title={t("โครงการบ้านพร้อมอยู่ ทาวน์โฮม ทาวน์เฮ้าส์เชียงใหม่ ห้องแถวราคาถูก")} 
+3103:        title={`โครงการ ${project ? t(project.title) : ''} พร้อมอยู่เชียงใหม่`} 
+3360:                    title="C-Home Project Tour Video Guide"
+3612:                    title={t('กลับสู่พิกัดโครงการ')}
+3636:                title="Google Maps Interactive Location for C-Home Project"
+3786:        title={`โครงการ ${project ? t(project.title) : ''} พร้อมอยู่เชียงใหม่`} 
+3886:      <ImageModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} imageSrc={selectedImage} title={project.title} />
+3898:        title={t("ขายที่ดินเปล่าทำเลทอง เชียงใหม่ - เหมาะสำหรับสร้างบ้านหรือลงทุน")} 
+3970:        title={`ขายที่ดิน ${land ? t(land.title) : ''} - ที่ดินเปล่าเชียงใหม่ทำเลทอง`} 
+4068:      <ImageModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} imageSrc={selectedImage} title={t(land.title)} />
+4080:        title={t("ผลงานสร้างบ้านคุณภาพ โครงการและบ้านระดับพรีเมียม")} 
+4147:        title={`ผลงานประเภท ${categoryInfo ? t(categoryInfo.title) : ''}`} 
+4266:        title={`ผลงานโครงการ ${project ? t(project.title) : ''} - ฤทัยคอนสตรัคชั่น`} 
+4374:      <ImageModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} imageSrc={selectedImage} title={project.title} />
+4408:        title={t("บทความน่ารู้เรื่องบ้าน บล็อกสร้างบ้านและอสังหาริมทรัพย์")} 
+4450:        title={t("บริการรับสร้างบ้านครบวงจร คุณภาพดีด้วยทีมวิศวกร")} 
+4575:        title={t("เกี่ยวกับเรา ฤทัยคอนสตรัคชั่น - ผู้เชี่ยวชาญด้านงานสร้างบ้านเชียงใหม่")} 

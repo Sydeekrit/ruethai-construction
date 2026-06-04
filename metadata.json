@@ -1,0 +1,8 @@
+{
+  "name": "ruethai-const",
+  "description": "เรา..สร้างบ้านด้วยใจ - ฤทัยคอนสตรัคชั่น",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
