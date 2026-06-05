@@ -1691,7 +1691,7 @@ function HomePage() {
                   <h3 className="text-slate-900 text-[19px] md:text-xl font-medium mb-3 font-sans">
                     {step.title}
                   </h3>
-                  <p className="text-slate-500 text-xs sm:text-[13px] leading-relaxed font-light max-w-[240px] mx-auto md:max-w-none">
+                  <p className="text-slate-500 text-[14px] leading-relaxed font-light max-w-[240px] mx-auto md:max-w-none">
                     {step.desc}
                   </p>
                 </motion.div>
