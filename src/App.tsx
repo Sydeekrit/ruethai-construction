@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import i18n from './i18n';
 import { useTranslation } from 'react-i18next';
 import YouTube, { YouTubeProps } from 'react-youtube';
-import { Building2, Hexagon, HardHat, Home, Ruler, Phone, Mail, MapPin, ArrowRight, CheckCircle2, ChevronRight, DraftingCompass, Hammer, ArrowLeft, Maximize, Bed, Bath, Car, Sofa, Utensils, Coffee, FileText, ChevronLeft, ChevronDown, Filter, Search, VolumeX, Info, Key, ShieldCheck, Wrench, Trophy, Sparkles, MessageSquare, Layout as LayoutIcon, Map, Mountain, Users, Menu, X, Paintbrush, Handshake, ClipboardList, PenTool, CircleDollarSign, ClipboardCheck, Truck, HomeIcon, AlertCircle, Landmark, ZoomIn, ZoomOut, Layers, Camera, Navigation, RefreshCw, Sun, Moon, Pencil, Soup } from 'lucide-react';
+import { Building2, Hexagon, HardHat, Home, Ruler, Phone, Mail, MapPin, ArrowRight, CheckCircle2, ChevronRight, DraftingCompass, Hammer, ArrowLeft, Maximize, Bed, Bath, Car, Sofa, Utensils, Coffee, FileText, ChevronLeft, ChevronDown, Filter, Search, VolumeX, Volume2, Info, Key, ShieldCheck, Wrench, Trophy, Sparkles, MessageSquare, Layout as LayoutIcon, Map, Mountain, Users, Menu, X, Paintbrush, Handshake, ClipboardList, PenTool, CircleDollarSign, ClipboardCheck, Truck, HomeIcon, AlertCircle, Landmark, ZoomIn, ZoomOut, Layers, Camera, Navigation, RefreshCw, Sun, Moon, Pencil, Soup } from 'lucide-react';
 import { BrowserRouter, Routes, Route, Link, Outlet, useParams, useNavigate, useLocation } from 'react-router-dom';
 import MaterialListPage from './MaterialListPage';
 import ServiceFeesPage from './ServiceFeesPage';
@@ -254,7 +254,7 @@ function Logo() {
   const { t } = useTranslation();
   return (
     <div className="flex items-end gap-1 sm:gap-1.5 translate-y-[2px]">
-      <div className="relative flex items-center justify-center w-[24px] h-[24px] sm:w-[30px] sm:h-[30px] -translate-y-[2px]">
+      <div className="relative flex items-center justify-center w-[28px] h-[28px] sm:w-[36px] sm:h-[36px] -translate-y-[2px]">
         <img src="/images/general/Logo.webp" alt="Ruethai Logo" loading="eager" decoding="async" className="w-full h-full object-contain object-bottom" />
       </div>
       <div className="flex flex-col justify-center text-center">
@@ -476,7 +476,7 @@ function Layout() {
       <footer className="bg-primary py-2 px-6 lg:px-8 border-t hover:border-transparent border-slate-800">
         <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-2">
     <div className="flex items-end gap-1 sm:gap-1.5 translate-y-[2px]">
-      <div className="relative flex items-center justify-center w-[24px] h-[24px] sm:w-[30px] sm:h-[30px] -translate-y-[2px]">
+      <div className="relative flex items-center justify-center w-[28px] h-[28px] sm:w-[36px] sm:h-[36px] -translate-y-[2px]">
         <img src="/images/general/Logo.webp" alt="Ruethai Logo" loading="lazy" decoding="async" className="w-full h-full object-contain object-bottom filter brightness-0 invert" />
       </div>
       <div className="flex flex-col text-center">
@@ -1564,74 +1564,51 @@ function HomePage() {
               <div className="absolute -right-[3px] lg:-right-[4px] top-36 lg:top-40 w-[3px] lg:w-[4px] h-14 lg:h-16 bg-zinc-700 rounded-r-sm z-[-1] shadow-[inset_-1px_0_1px_rgba(255,255,255,0.1)]" />
 
               {/* Screen Content */}
-              <div className="absolute inset-[6px] lg:inset-[8px] rounded-[2rem] border-[3px] border-black overflow-hidden bg-black z-10 [&>div]:w-full [&>div]:h-full flex items-center justify-center group pointer-events-auto">
-                {isVideoPlaying ? (
-                  <YouTube
-                    videoId="o1nJfQWxoYo"
-                    className="w-full h-full"
-                    iframeClassName="w-full h-full object-cover border-0 scale-[1.02]"
-                    opts={{
-                      width: '100%',
-                      height: '100%',
-                      playerVars: {
-                        autoplay: 1,
-                        loop: 1,
-                        playlist: 'o1nJfQWxoYo',
-                        playsinline: 1,
-                        controls: 1,
-                        rel: 0,
-                        disablekb: 0,
-                        modestbranding: 1,
-                        showinfo: 0
-                      }
-                    }}
-                    onReady={(event) => {
-                      setVideoPlayer(event.target);
-                      event.target.setVolume(90);
-                    }}
-                    onStateChange={(event) => {
-                      if (event.data === 0) { // YouTube.PlayerState.ENDED
-                        event.target.playVideo();
-                      }
-                    }}
-                  />
-                ) : (
+              <div className="absolute inset-[6px] lg:inset-[8px] rounded-[2rem] border-[3px] border-black overflow-hidden bg-black z-10 flex items-center justify-center group pointer-events-auto">
+                <YouTube
+                  videoId="oQmmsCmVoIc"
+                  className="w-full h-full"
+                  iframeClassName="w-full h-full object-cover border-0 scale-[1.02]"
+                  opts={{
+                    width: '100%',
+                    height: '100%',
+                    playerVars: {
+                      autoplay: 1,
+                      loop: 1,
+                      playlist: 'oQmmsCmVoIc',
+                      playsinline: 1,
+                      controls: 1,
+                      rel: 0,
+                      disablekb: 0,
+                      modestbranding: 1,
+                      showinfo: 0,
+                      mute: 1
+                    }
+                  }}
+                  onReady={(event) => {
+                    setVideoPlayer(event.target);
+                  }}
+                  onStateChange={(event) => {
+                    if (event.data === 0) { // YouTube.PlayerState.ENDED
+                      event.target.playVideo();
+                    }
+                  }}
+                />
+                
+                {!isVideoPlaying && (
                   <div 
-                    onClick={() => setIsVideoPlaying(true)}
-                    className="relative w-full h-full cursor-pointer overflow-hidden group/video flex flex-col justify-between p-6"
+                    onClick={() => {
+                      if (videoPlayer) {
+                        videoPlayer.unMute();
+                        videoPlayer.setVolume(60);
+                        setIsVideoPlaying(true);
+                      }
+                    }}
+                    className="absolute inset-0 z-20 cursor-pointer flex flex-col items-center justify-center bg-transparent group/unmute"
                   >
-                    {/* Cover image (HQ YouTube cover mockup) */}
-                    <img 
-                      src="https://img.youtube.com/vi/o1nJfQWxoYo/hqdefault.jpg" 
-                      alt="ST Construction VDO Showcase Cover" 
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105"
-                      loading="lazy"
-                    />
-                    {/* Shadow overlay */}
-                    <div className="absolute inset-0 bg-black/45 transition-colors duration-300 group-hover/video:bg-black/35" />
-                    
-                    {/* Badge */}
-                    <div className="relative z-10 text-center w-full mt-4">
-                      <span className="text-white text-[10px] font-mono tracking-widest uppercase bg-black/50 backdrop-blur-md px-3 py-1 rounded-full inline-block border border-white/10">
-                        VDO SHOWCASE
-                      </span>
-                    </div>
-
-                    {/* Elite play button with ripple hover */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-16 h-16 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-lg transition-all duration-300 group-hover/video:scale-110 group-hover/video:bg-primary group-hover/video:shadow-[0_0_20px_rgba(var(--primary-rgb),0.5)]">
-                        <svg className="w-6 h-6 fill-current translate-x-0.5" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Sub title */}
-                    <div className="relative z-10 text-center w-full mb-6">
-                      <p className="text-white/95 text-xs font-light tracking-wider drop-shadow-md bg-black/20 backdrop-blur-[2px] py-1 rounded-md">
-                        {t('คลิกเพื่อเล่นวิดีโอแนะนำ')}
-                      </p>
-                    </div>
+                     <div className="absolute bottom-6 bg-black/60 backdrop-blur-md border border-white/10 text-white text-[11px] sm:text-xs px-4 py-2 rounded-full font-medium flex items-center gap-2 opacity-80 group-hover/unmute:opacity-100 transition-opacity whitespace-nowrap">
+                        <Volume2 className="w-4 h-4" /> {t('แตะเพื่อเปิดเสียง')}
+                     </div>
                   </div>
                 )}
               </div>

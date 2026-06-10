@@ -29,7 +29,7 @@ export default function ServiceFeesPage() {
   const [constructionTier, setConstructionTier] = useState<number>(12500); // 12500, 15500, 19500
 
   // 3% percentage calculation demonstration
-  const estimatedConstructionValue = customArea * 15000; // estimated construction value at average 15k/sqm
+  const estimatedConstructionValue = customArea * 13000; // estimated construction value at average 13k/sqm
   const designFeeByPercentage = estimatedConstructionValue * 0.03;
 
   return (
@@ -153,7 +153,7 @@ export default function ServiceFeesPage() {
                   <input 
                     type="range" 
                     min="50" 
-                    max="1200" 
+                    max="1000" 
                     step="10"
                     value={customArea} 
                     onChange={(e) => setCustomArea(Number(e.target.value))}
@@ -162,10 +162,10 @@ export default function ServiceFeesPage() {
                   
                   <div className="flex justify-between text-[11px] text-slate-800 font-bold mt-2">
                     <span>50 ตร.ม.</span>
-                    <span>300 ตร.ม.</span>
-                    <span>600 ตร.ม.</span>
-                    <span>900 ตร.ม.</span>
-                    <span>1,200 ตร.ม.</span>
+                    <span>250 ตร.ม.</span>
+                    <span>500 ตร.ม.</span>
+                    <span>750 ตร.ม.</span>
+                    <span>1,000 ตร.ม.</span>
                   </div>
                 </div>
 
@@ -267,7 +267,7 @@ export default function ServiceFeesPage() {
                         <span className="text-[#9A8161]">฿{designFeeByPercentage.toLocaleString()}</span>
                       </div>
                       <p className="text-slate-700 leading-relaxed font-normal">
-                        * {t('คิดร้อยละ 3 จากงบประมาณก่อสร้างประเมินเบื้องต้นเฉลี่ย (ตัวอย่างคำนวณที่ ฿15,000 ต่อ ตร.ม.)')}
+                        * {t('คิดร้อยละ 3 จากงบประมาณก่อสร้างประเมินเบื้องต้นเฉลี่ย (ตัวอย่างคำนวณที่ ฿13,000 ต่อ ตร.ม.)')}
                       </p>
                     </div>
                   </div>
@@ -289,10 +289,22 @@ export default function ServiceFeesPage() {
                   </div>
                 )}
 
-                <div className="mt-4 flex items-start gap-2 text-xs text-slate-800 font-semibold leading-relaxed">
-                  <Sparkles className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5 animate-spin-slow" />
-                  <span>
-                    <strong>{t('เอกสิทธิ์พิเศษ:')}</strong> {t('หากตกลงเซ็นสัญญาจ้างควบคุมงานก่อสร้าง (Turnkey) ดำเนินงานกับฤทัยคอนสตรัคชั่น ค่าจ้างแบบสถาปัตยกรรมจะได้รับส่วนลดหักคืนให้ครบ 100% เต็มจำนวน ทันที!')}
+                <div className="mt-4 flex items-start gap-3 bg-gradient-to-br from-[#FFFDF8] to-[#FFF9F0] p-4 rounded-xl border border-[#EEDBBA] shadow-sm relative overflow-hidden group">
+                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#D4AF37] to-[#C5A880]" />
+                  <div className="p-1.5 bg-white shadow-sm rounded-lg border border-[#EEDBBA] flex-shrink-0">
+                    <Sparkles className="w-5 h-5 text-[#D4AF37] animate-pulse" />
+                  </div>
+                  <span className="text-xs sm:text-[13px] text-slate-700 leading-relaxed font-medium pt-0.5">
+                    <span className="inline-block bg-[#FDF6E3] border border-[#EEDBBA] text-[#B8860B] font-extrabold px-2 py-0.5 rounded uppercase tracking-wide text-[10px] sm:text-[11px] mb-1.5 shadow-sm">
+                      {t('✨ เอกสิทธิ์พิเศษสำหรับคุณ')}
+                    </span><br/>
+                    {t('หากตกลงรับบริการก่อสร้างในแบบ (Turnkey) กับทางฤทัยคอนสตรัคชั่น')} <br className="hidden sm:block" />
+                    <span className="relative inline-block mt-1">
+                      <span className="absolute inset-0 bg-[#FFF3D6] transform -skew-x-6 rounded-sm"></span>
+                      <strong className="relative z-10 text-[#A67B27] font-extrabold px-1">
+                        {t('เรายินดีคืนส่วนลดค่าจ้างออกแบบสถาปัตยกรรมให้เต็ม 100% ทันที!')}
+                      </strong>
+                    </span>
                   </span>
                 </div>
               </div>
